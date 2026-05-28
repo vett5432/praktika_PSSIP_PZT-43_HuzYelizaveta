@@ -231,7 +231,7 @@
         </div>
       </div>
     </section>
-    <section class="promo-slider py-5" >
+    <section class="promo-slider py-5" id="client">
       <div class="container-lg">
         <div class="row align-items-center gy-4">
           <div class="col-12 col-lg-6">
@@ -378,9 +378,7 @@
         </div>
       </div>
     </section>
-
-    <!-- СКРЫТИЕ И РАСКРЫТИЕ КОНТЕНТА -->
-    <!-- 9. Accordion: Группа сворачиваемых панелей (FAQ) -->
+    <!--Группа сворачиваемых панелей -->
     <section class="py-5 bg-light" id="faq">
       <div class="container-lg">
         <h2 class="mb-5">Часто задаваемые вопросы (FAQ)</h2>
@@ -453,8 +451,7 @@
         </div>
       </div>
     </section>
-
-    <!-- 11. Nav-Tabs: Переключение между вкладками с разным содержимым -->
+    <!-- Переключение между вкладками с разным содержимым -->
     <section class="py-5">
       <div class="container-lg">
         <h2 class="mb-4">Подробнее о каркасных домах</h2>
@@ -486,7 +483,7 @@
                 <p>Конструкция выполнена из сертифицированных материалов с использованием современных технологий теплоизоляции. Система вентиляции обеспечивает оптимальный микроклимат внутри помещений.</p>
                 <p>Модульная система позволяет быстро собрать дом на месте, минимизируя время строительства. Все компоненты предварительно заготавливаются на производстве с высокой точностью.</p>
                 
-                <!-- 10. Collapse: Сворачиваемый блок "Читать далее" -->
+                <!-- Сворачиваемый блок "Читать далее" -->
                 <div class="mt-4">
                   <button class="btn btn-outline-primary btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#moreDescription" aria-expanded="false" aria-controls="moreDescription">
                     Читать далее
@@ -781,7 +778,6 @@
     </div>
   </footer>
 
-  <!-- Modal: Callback -->
   <div class="modal fade" id="callbackModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content border-0">
@@ -806,7 +802,6 @@
     </div>
   </div>
 
-  <!-- Modal: Application -->
   <div class="modal fade" id="applicationModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content border-0">
@@ -835,7 +830,6 @@
     </div>
   </div>
 
-  <!-- Modal: Question -->
   <div class="modal fade" id="questionModal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content border-0">
@@ -864,31 +858,25 @@
     </div>
   </div>
 
-  <!-- Toast Notification -->
   <div class="toast-container position-fixed bottom-0 end-0 p-3" id="toastContainer"></div>
 
-  <!-- Tooltip Examples -->
   <div class="d-none" id="tooltipContainer">
     <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-toggle="tooltip" data-bs-title="This is a tooltip" data-bs-placement="top">Hover me</button>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    // Initialize tooltips
     const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
       return new bootstrap.Tooltip(tooltipTriggerEl)
     })
 
-    // Initialize all accordion and collapse elements
     document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(element => {
       element.addEventListener('click', function() {
-        // Smooth expansion animation
         this.classList.toggle('expanding');
       });
     });
 
-    // Toast notification example
     function showToast(title, message) {
       const toastContainer = document.getElementById('toastContainer');
       const toastHTML = `
@@ -906,8 +894,6 @@
       toast.show();
       setTimeout(() => toastElement.remove(), 5000);
     }
-
-    // Contact form handling
     document.querySelectorAll('form').forEach(form => {
       form.addEventListener('submit', function(e) {
         e.preventDefault();
@@ -919,8 +905,6 @@
         this.reset();
       });
     });
-
-    // Smooth scroll for menu links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         const href = this.getAttribute('href');
@@ -930,23 +914,14 @@
         }
       });
     });
-
-    // Tab content scroll tracking
     document.querySelectorAll('[data-bs-toggle="tab"]').forEach(tab => {
       tab.addEventListener('shown.bs.tab', function() {
-        // Scroll to tab section when tab is switched
         const tabParent = this.closest('.container-lg');
         if (tabParent) {
           tabParent.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
       });
     });
-
-    // Accordion auto-close on page load for better UX
-    const accordion = document.querySelector('.accordion');
-    if (accordion) {
-      // Keep only first item open by default (already set in HTML)
-    }
   </script>
 </body>
 </html>
