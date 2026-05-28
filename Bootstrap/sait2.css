@@ -132,7 +132,6 @@ a { color: inherit; }
 #faqAccordion { margin-bottom: 40px; }
 .nav-tabs .nav-link { position: relative; }
 .tab-content .card { border: 1px solid #ddd; }
-.collapse-toggle { cursor: pointer; }
 
 /* Адаптивность для новых компонентов */
 @media (max-width: 991px) {
