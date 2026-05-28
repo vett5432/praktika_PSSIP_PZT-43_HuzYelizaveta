@@ -3,7 +3,7 @@
 
 /* Общее */
 html { scroll-behavior: smooth; }
-body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: var(--text-color); overflow-x: hidden; }
+body { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; color: var(--text-color); }
 a { color: inherit; }
 
 /* Навигационная панель */
@@ -117,10 +117,6 @@ a { color: inherit; }
 .tab-content { background-color: #f4f5f8; padding: 30px; border-radius: 12px; }
 .tab-pane { animation: fadeIn 0.3s ease-in; }
 @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-
-/* Collapse стили */
-.collapse:not(.show) { display: none; }
-.collapse.show { display: block; }
 
 /* Card table стили */
 .table { margin-bottom: 0; }
