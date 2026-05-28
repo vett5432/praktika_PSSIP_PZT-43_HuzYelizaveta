@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ДомСтрой — Строительство дачных домов</title>
+  <link rel="stylesheet" href="sait.css">
+</head>
+<body>
+
+  <header id="main">
+    <div class="header-top">
+      <div class="logo">
+        <img src="media/logo.png" alt="Строительная компания ДомСтрой">
+      </div>
+      
+      <button class="burger-menu-btn" id="burgerBtn" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      
+      <div class="contact-info desk-only">
+        <p>Пишите нам: <a href="mailto:domstroy-st@bk.ru">domstroy-st@bk.ru</a></p>
+        <p>Моск.обл. г.Ступино ул.Промышленная</p>
+        <p>Пн-Сб 9:00-18:00, Вс - выходной</p>
+      </div>
+
+      <div class="phones desk-only">
+        <a href="tel:+74951420725">+7 (495) 142-07-25</a>
+        <a href="tel:+79779080250">+7 (977) 908-02-50</a>
+      </div>
+
+      <div class="actions-block desk-only">
+        <button class="callback-btn">ЗАКАЗАТЬ ЗВОНОК</button>
+        <div class="socials">
+          <img src="media/youtube.png" alt="YouTube">
+          <img src="media/inst.png" alt="Instagram">
+          <img src="media/vk.png" alt="VK">
+          <img src="media/whatsapp.png" alt="WhatsApp">
+          <img src="media/tg.png" alt="Telegram">
+        </div>
+      </div>
+    </div>
+
+    <div class="navigation-wrapper" id="navWrapper">
+      <button class="close-menu-btn" id="closeBtn" aria-label="Закрыть меню">&times;</button>
+
+      <nav class="main-nav">
+        <ul>
+          <li class="active"><a href="#main">Главная</a></li>
+          <li><a href="#equipment">Комплектация</a></li>
+          <li class="mob-only"><a href="#catalog">Каталог</a></li>
+          <li><a href="#client">Заказчику</a></li>
+          <li><a href="#delivery">Доставка и сборка</a></li>
+          <li><a href="#works">Наши работы</a></li>
+          <li><a href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <nav class="catalog-nav desk-only" id="catalog">
+        <ul>
+          <li><a href="#cat-houses">Каталог домов</a></li>
+          <li><a href="#cat-cabins">Каталог бытовок</a></li>
+          <li><a href="#cat-gazebos">Каталог беседок</a></li>
+          <li><a href="#cat-baths">Каталог бань</a></li>
+          <li><a href="#cat-buildings">Каталог хоз. построек</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-menu-contacts mob-only">
+        <div class="mob-divider"></div>
+        <p class="mob-email">Пишите нам: <a href="mailto:domstroy-st@bk.ru">domstroy-st@bk.ru</a></p>
+        <p class="mob-address">Моск.обл. г.Ступино ул.Промышленная<br>Пн-Сб 9:00-18:00, Вс - выходной</p>
+        
+        <div class="mob-phones">
+          <a href="tel:+74951420725">+7 (495) 142-07-25</a>
+          <a href="tel:+79779080250">+7 (977) 908-02-50</a>
+        </div>
+
+        <div class="mob-socials">
+          <img src="media/youtube.png" alt="YouTube">
+          <img src="media/inst.png" alt="Instagram">
+          <img src="media/vk.png" alt="VK">
+          <img src="media/whatsapp.png" alt="WhatsApp">
+          <img src="media/tg.png" alt="Telegram">
+        </div>
+
+        <button class="mob-callback-btn">ЗАКАЗАТЬ ЗВОНОК</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Строительство дачных домов<br>и коттеджей</h1>
+        <p>На участок поставляются готовые модули, производится их монтаж в короткие сроки. Мы гарантируем выполнение всех взятых на себя обязательств и доступные цены.</p>
+        
+        <a href="#calculator" class="calc-btn">
+          <span class="arrow-circle">
+            <svg viewBox="0 0 24 24">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
+          </span>
+          Рассчитать стоимость
+        </a>
+      </div>
+    </section>
+    <section class="offers" id="equipment">
+      <h2 class="offers-title">Предложения для вас</h2>
+      
+      <div class="offers-tabs">
+        <button class="tab-btn active">Каркасные дома</button>
+        <button class="tab-btn">Бани</button>
+        <button class="tab-btn">Беседки</button>
+        <button class="tab-btn">Бытовки</button>
+        <button class="tab-btn">Хоз. постройки</button>
+      </div>
+      
+      <div class="carousel-container">
+        <button class="arrow-btn prev-btn">
+          <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        
+        <div class="products-grid">
+          <div class="product-card">
+            <div class="product-img"><img src="media/dom1.png" alt="Каркасный дом"></div>
+            <div class="product-info">
+              <h3>Каркасный дом с балконом LK-2</h3>
+              <div class="specs">
+                <div class="spec-row"><span>Размер:</span><span>4х6 м</span></div>
+                <div class="spec-row"><span>Площадь:</span><span>34.8 м²</span></div>
+                <div class="spec-row"><span>Количество комнат:</span><span>3 шт</span></div>
+              </div>
+              <div class="product-price">940 000 ₽</div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img"><img src="media/dom2.png" alt="Каркасный дом"></div>
+            <div class="product-info">
+              <h3>Каркасный дом с балконом LK-2</h3>
+              <div class="specs">
+                <div class="spec-row"><span>Размер:</span><span>4х6 м</span></div>
+                <div class="spec-row"><span>Площадь:</span><span>34.8 м²</span></div>
+                <div class="spec-row"><span>Количество комнат:</span><span>3 шт</span></div>
+              </div>
+              <div class="product-price">940 000 ₽</div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img"><img src="media/dom3.png" alt="Каркасный дом"></div>
+            <div class="product-info">
+              <h3>Каркасный дом с балконом LK-2</h3>
+              <div class="specs">
+                <div class="spec-row"><span>Размер:</span><span>4х6 м</span></div>
+                <div class="spec-row"><span>Площадь:</span><span>34.8 м²</span></div>
+                <div class="spec-row"><span>Количество комнат:</span><span>3 шт</span></div>
+              </div>
+              <div class="product-price">940 000 ₽</div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img"><img src="media/dom4.png" alt="Каркасный дом"></div>
+            <div class="product-info">
+              <h3>Каркасный дом с балконом LK-2</h3>
+              <div class="specs">
+                <div class="spec-row"><span>Размер:</span><span>4х6 м</span></div>
+                <div class="spec-row"><span>Площадь:</span><span>34.8 м²</span></div>
+                <div class="spec-row"><span>Количество комнат:</span><span>3 шт</span></div>
+              </div>
+              <div class="product-price">940 000 ₽</div>
+            </div>
+          </div>
+        </div>
+
+        <button class="arrow-btn next-btn">
+          <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+
+      <div class="offers-action">
+        <a href="#" class="view-all-btn">Смотреть все проекты</a>
+      </div>
+    </section>
+    <section class="promo-slider">
+      <div class="promo-container">
+        <div class="promo-image">
+          <img src="media/zayavka.png" alt="Работа с материнским капиталом">
+        </div>
+        
+        <div class="promo-content">
+          <div class="promo-text-wrap">
+            <h2>Мы работаем с <br><strong>материнским капиталом!</strong></h2>
+            <a href="#callback" class="circle-btn">Оставить<br>заявку</a>
+          </div>
+          
+          <div class="slider-controls">
+            <button class="control-arrow prev-arrow">
+              <svg viewBox="0 0 24 24"><line x1="20" y1="12" x2="4" y2="12"></line><polyline points="10 18 4 12 10 6"></polyline></svg>
+            </button>
+            <span class="counter">1/2</span>
+            <button class="control-arrow next-arrow">
+              <svg viewBox="0 0 24 24"><line x1="4" y1="12" x2="20" y2="12"></line><polyline points="14 6 20 12 14 18"></polyline></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="advantages" id="delivery">
+      <div class="advantages-container">
+        <h2 class="advantages-title">Наши преимущества</h2>
+        
+        <div class="advantages-grid">
+          <div class="adv-card">
+            <div class="adv-text">
+              <h3>Работаем строго по договору</h3>
+              <p>Стоимость строительства фиксированная. И все наши обязательства прописаны в договоре.</p>
+            </div>
+            <div class="adv-icon"><img src="media/p1.png" alt="Договор"></div>
+          </div>
+
+          <div class="adv-card">
+            <div class="adv-text">
+              <h3>Выставка и собственное производство</h3>
+              <p>Лучшее соотношение цены и качества. К нам возвращаются наши клиенты и рекомендуют своим знакомым.</p>
+            </div>
+            <div class="adv-icon"><img src="media/p2.png" alt="Производство"></div>
+          </div>
+
+          <div class="adv-card">
+            <div class="adv-text">
+              <h3>Честная цена и понятные условия</h3>
+              <p>Поэтапная оплата. Нет скрытых платежей и мелких шрифтов.</p>
+            </div>
+            <div class="adv-icon"><img src="media/p3.png" alt="Честная цена"></div>
+          </div>
+
+          <div class="adv-card">
+            <div class="adv-text">
+              <h3>Экологически чистый материал</h3>
+              <p>Сертифицированные, экологичные материалы от проверенных поставщиков.</p>
+            </div>
+            <div class="adv-icon"><img src="media/p4.png" alt="Эко материалы"></div>
+          </div>
+
+          <div class="adv-card">
+            <div class="adv-text">
+              <h3>Фотоотчет процесса строительства</h3>
+              <p>Бесплатный фото или видео отчет (по договорённости).</p>
+            </div>
+            <div class="adv-icon"><img src="media/p5.png" alt="Фотоотчет"></div>
+          </div>
+
+          <div class="adv-card">
+            <div class="adv-text">
+              <h3>Гарантийное обслуживание любой постройки</h3>
+              <p>Даем гарантию не на словах.</p>
+            </div>
+            <div class="adv-icon"><img src="media/p6.png" alt="Гарантия"></div>
+          </div>
+
+          <div class="adv-card">
+            <div class="adv-text">
+              <h3>Более 7 лет опыта</h3>
+              <p>Современное и качественное строительство, опытными бригадами.</p>
+            </div>
+            <div class="adv-icon"><img src="media/p7.png" alt="Опыт"></div>
+          </div>
+
+          <div class="adv-card">
+            <div class="adv-text">
+              <h3>Индивидуальные проекты</h3>
+              <p>Возможны изменения проектов из каталога и строительство по индивидуальным планам.</p>
+            </div>
+            <div class="adv-icon"><img src="media/p8.png" alt="Проекты"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subscribe-vk">
+      <div class="subscribe-container">
+        <div class="subscribe-info">
+          <h2><strong>Хотите узнавать</strong> о строящихся объектах, акциях и спецпредложениях?</h2>
+          <p>Подпишитесь и узнавайте свежие новости и полезную информацию раньше всех!</p>
+        </div>
+        <form class="subscribe-form" action="#" method="POST">
+          <input type="email" class="subscribe-input" placeholder="Введите ваш e-mail" required>
+          <button type="submit" class="subscribe-btn">ПОДПИСАТЬСЯ</button>
+        </form>
+      </div>
+    </section>
+    <section class="reviews" id="works">
+      <div class="reviews-slider-container">
+        <button class="review-arrow prev-rev">
+          <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+
+        <div class="reviews-track">
+          <div class="review-slide side-slide"><img src="media/otzyv.png" alt="Отзыв"></div>
+          <div class="review-slide active-slide"><img src="media/otzyv.png" alt="Текущий отзыв"></div>
+          <div class="review-slide side-slide"><img src="media/otzyv.png" alt="Отзыв"></div>
+        </div>
+
+        <button class="review-arrow next-rev">
+          <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
+      </div>
+    </section>
+    <section class="contacts-section" id="contacts">
+      <div class="contacts-container">
+        <div class="contacts-card">
+          <h2>КОНТАКТЫ</h2>
+          
+          <div class="contacts-block-group">
+            <h3>Адрес:</h3>
+            <p>Моск.обл. г.Ступино ул.Промышленная<br>(200м от завода "Изомин")</p>
+            <p class="schedule">Пн-Сб 9:00-18:00, Вс - выходной</p>
+          </div>
+
+          <div class="contacts-block-group">
+            <h3>Контакты:</h3>
+            <div class="contacts-split">
+              <div class="contacts-phones">
+                <a href="tel:+74951420725" class="phone-link">+7 (495) 142-07-25</a>
+                <a href="tel:+79779080250" class="phone-link">+7 (977) 908-02-50</a>
+              </div>
+              <div class="contacts-digital">
+                <a href="mailto:domstroy-st@bk.ru" class="email-link">domstroy-st@bk.ru</a>
+                <div class="contacts-socials">
+                  <img src="media/youtube.png" alt="YouTube">
+                  <img src="media/inst.png" alt="Instagram">
+                  <img src="media/vk.png" alt="VK">
+                  <img src="media/whatsapp.png" alt="WhatsApp">
+                  <img src="media/tg.png" alt="Telegram">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button class="ask-question-btn">ЗАДАТЬ ВОПРОС</button>
+        </div>
+      </div>
+    </section>
+  </main>
+<footer class="main-footer">
+    <div class="footer-top-row">
+      <div class="footer-logo">
+        <img src="media/logo.png" alt="ДомСтрой">
+      </div>
+      <div class="footer-contacts">
+        <p>Пишите нам: <a href="mailto:domstroy-st@bk.ru">domstroy-st@bk.ru</a></p>
+        <p>Моск.обл. г.Ступино ул.Промышленная</p>
+        <p>Пн-Сб 9:00-18:00, Вс - выходной</p>
+      </div>
+      <div class="footer-phones">
+        <a href="tel:+74951420725">+7 (495) 142-07-25</a>
+        <a href="tel:+79779080250">+7 (977) 908-02-50</a>
+      </div>
+      <div class="footer-social-block">
+        <span class="social-title">МЫ В СОЦИАЛЬНЫХ СЕТЯХ:</span>
+        <div class="footer-socials-list">
+          <img src="media/youtube.png" alt="YouTube">
+          <img src="media/inst.png" alt="Instagram">
+          <img src="media/vk.png" alt="VK">
+          <img src="media/whatsapp.png" alt="WhatsApp">
+          <img src="media/tg.png" alt="Telegram">
+        </div>
+      </div>
+    </div>
+
+    <hr class="footer-divider">
+
+    <div class="footer-nav-grid">
+      <div class="footer-nav-col">
+        <h4>ПРОДУКЦИЯ</h4>
+        <ul>
+          <li><a href="#">Каркасные дома</a></li>
+          <li><a href="#">Модульные дома</a></li>
+          <li><a href="#">Бани "Под ключ"</a></li>
+          <li><a href="#">Беседки</a></li>
+          <li><a href="#">Бытовки (утепленные)</a></li>
+          <li><a href="#">Хоз. постройки (без утепления)</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav-col">
+        <h4>КОМПЛЕКТАЦИЯ</h4>
+        <ul>
+          <li><a href="#">Комплектация домов</a></li>
+          <li><a href="#">Комплектация бань</a></li>
+          <li><a href="#">Комплектация беседок</a></li>
+          <li><a href="#">Комплектация бытовок</a></li>
+          <li><a href="#">Комплектация хоз. построек</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav-col">
+        <h4>ЗАКАЗЧИКУ</h4>
+        <ul>
+          <li><a href="#">Индивидуальное строительство</a></li>
+          <li><a href="#">Фиксированные цены</a></li>
+          <li><a href="#">Дистанционное оформление договора</a></li>
+          <li><a href="#">Материнский капитал</a></li>
+          <li><a href="#">Порядок оплаты</a></li>
+          <li><a href="#">Процесс заказа</a></li>
+        </ul>
+      </div>
+      <div class="footer-nav-col">
+        <h4>ПОЛЕЗНО</h4>
+        <ul>
+          <li><a href="#">Доставка и сборка</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#">Наши работы</a></li>
+        </ul>
+      </div>
+      <div class="footer-buttons-col">
+        <a href="#" class="footer-outline-btn btn-yellow-text">ЧЕСТНЫЙ КАЛЬКУЛЯТОР БЕСЕДОК</a>
+        <a href="#" class="footer-outline-btn btn-white-text">СВЯЗАТЬСЯ С НАМИ</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom-row">
+      <p class="copyright">Copyright © "ДОМСТРОЙ" 2022. Все права защищены.</p>
+      <div class="legal-links">
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Пользовательское соглашение</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    const burgerBtn = document.getElementById('burgerBtn');
+    const closeBtn = document.getElementById('closeBtn');
+    const navWrapper = document.getElementById('navWrapper');
+    const menuLinks = document.querySelectorAll('.main-nav a');
+
+    burgerBtn.addEventListener('click', () => { navWrapper.classList.add('open'); });
+    closeBtn.addEventListener('click', () => { navWrapper.classList.remove('open'); });
+    menuLinks.forEach(link => { link.addEventListener('click', () => { navWrapper.classList.remove('open'); }); });
+  </script>
+</body>
+</html>
